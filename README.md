@@ -3,6 +3,11 @@
 [![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/OpenPheno/OpenPheno/blob/main/LICENSE)  
 [![Open Source](https://img.shields.io/badge/Open_Source-Friendly-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
+
+<div style="text-align:center;">
+  <img src="images/openpheno_logo.png" alt="OpenPheno Logo" width="300px">
+</div>
+
 ## About OpenPheno
 
 OpenPheno is an open-access, user-friendly, and smartphone-based software platform designed for instant plant phenotyping. It is encapsulated within a WeChat Mini-Program, leveraging cloud computing to provide a portable, intuitive, and cost-free solution for plant scientists, breeders, and enthusiasts. OpenPheno aims to democratize plant phenotyping by making advanced tools accessible to a broader audience, including those without specialized hardware or coding skills.
@@ -26,6 +31,10 @@ OpenPheno currently supports the following phenotyping tools:
 6. **TomatoPheno**: Measurement of tomato fruit size and count.
 7. **CornPheno**: Corn kernel counting and row feature extraction.
 
+<div style="text-align:center;">
+  <img src="images/overview.jpg" alt="Overview" width="1000px">
+</div>
+
 ## Getting Started
 
 ### Prerequisites
@@ -34,20 +43,15 @@ OpenPheno currently supports the following phenotyping tools:
 - **Python 3.6 or higher**: Required for backend and algorithm development.
 - **Internet Connection**: Required for data transmission and cloud processing.
 
-### Installation
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/OpenPheno/OpenPheno.git
-   cd OpenPheno
-   
-2. 
-
 ### Usage
 1. Open the OpenPheno WeChat Mini-Program on your smartphone.
 2. Select a phenotyping tool (e.g., SeedPheno, WheatHeadPheno).
 3. Capture an image of the plant specimen.
 4. Tap "Analyze" to process the image and view the results.
+
+<div style="text-align:center;">
+  <img src="images/user_guide.jpg" alt="Usage Guide" width="500px">
+</div>
 
 ## Contributing
 We welcome contributions from the community to enhance OpenPheno's capabilities. To contribute a new algorithm or tool:
