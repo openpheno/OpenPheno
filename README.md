@@ -55,15 +55,73 @@ OpenPheno currently supports the following phenotyping tools:
 
 ## Contributing
 We welcome contributions from the community to enhance OpenPheno's capabilities. To contribute a new algorithm or tool:
-- **Fork the Repository**:
-Fork this repository to your GitHub account.
+
 - **Develop Your Tool**:
 Implement your algorithm in Python.
-Ensure it follows the OpenPheno API format.
-- **Submit Your Contribution**:
-Create a pull request with your executable files, model weights, and documentation.
-Our team will review and integrate your contribution.
+Ensure it follows the OpenPheno API format. The submitted content must include the following files and directories, organized as shown below:
+  ```
+  <root_directory>/
+  ├── main.py
+  ├── weights/
+  ├── test_samples/
+  ├── output/
+  ├── requirements.txt
+  └── README.md
+  ```
+  
+    1. `main.py` File:
+        The `main.py` file serves as the unified entry point for the algorithm and must include the following function definition:
+        - `main_algorithm(image)`: Accepts an image input and returns the algorithm's processing result.
+    
+    2. Output Files:
+        All inference output files can be saved in the `output/` directory.
+    
+    3. Weight Files:
+        - All weight files must be stored in the `weights/` directory.
+        - Weight files should be dynamically loaded in `main.py`, with paths relative to `weights/`.
+        - It is recommended to remove redundant weights before submission, retaining only the necessary ones.
+      
+    4. `requirements.txt` File:
+        - List all required dependency libraries and their versions, for example:
+          ```
+          numpy==1.21.0
+          opencv-python==4.5.3
+          onnxruntime==1.10.0
+          ```
+        - The platform will automatically install dependencies in a virtual environment based on this file to test the code's runtime environment.
+      
+    5. Test Samples:
+        - Provide 2-5 test sample images, stored in the `test_samples/` directory.
+        - Test file types must cover the main formats supported by the algorithm (e.g., `.jpg`, `.png`).
+    
+    6. `README.md` File:
+        Must include the following content:
+        - **Algorithm Overview**: Briefly describe the algorithm's functionality and principles.
+        - **Author and Affiliation**: Provide the author information, including name and affiliation.
+        - **Usage Instructions**: Explain the logic, input, and output of `main_algorithm`.
+        - **Environment Requirements**: Specify the required Python version and hardware needs.
 
+
+
+- **Submit Your Contribution**:
+Create a pull request with your executable files, model weights, requirments, test samples, and documentation.
+Developers should package the files prepared according to the above guidelines into a `.zip` or `.tar.gz` format and e-mail them to openpheno@phenotrait.com. The uploaded content must include:
+
+
+- **Platform Checks**:
+The platform will perform the following checks:
+  - File Structure Check: Verify the presence of required files and directories.
+  - Code Check: Confirm that the `main_algorithm` method is defined.
+  - Weight Validation: Ensure necessary weight files are provided.
+  - Dependency Check: Verify completeness of dependency files and check for version conflicts.
+  - Output Validation: Confirm that the algorithm outputs files according to the guidelines.
+  - Performance Test: Test algorithm execution using the provided `test_samples/`.
+
+
+- **Release and Version Management**：
+  - Algorithms that pass the review will be published to the community and assigned a version number.
+  - Developers can update the algorithm by submitting new version packages.
+    
 
 ## Contact
 For any questions or support, please contact the OpenPheno team at openpheno@phenotrait.com.
