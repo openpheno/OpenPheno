@@ -1,0 +1,4 @@
+- **Algorithm Overview**: Briefly describe the algorithm's functionality and principles.
+- **Author and Affiliation**: Provide the author information, including name and affiliation.
+- **Usage Instructions**: Explain the logic, input, and output of main_algorithm.
+- **Environment Requirements**: Specify the required Python version and hardware needs.
