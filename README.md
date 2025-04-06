@@ -40,7 +40,6 @@ OpenPheno currently supports the following phenotyping tools:
 ### Prerequisites
 
 - **Smartphone**: iOS or Android device with WeChat installed.
-- **Python 3.6 or higher**: Required for backend and algorithm development.
 - **Internet Connection**: Required for data transmission and cloud processing.
 
 ### Usage
@@ -105,7 +104,7 @@ Ensure it follows the OpenPheno API format. The submitted content must include t
 
 - **Submit Your Contribution**:
 Create a pull request with your executable files, model weights, requirments, test samples, and documentation.
-Developers should package the files prepared according to the above guidelines into a `.zip` or `.tar.gz` format and e-mail them to openpheno@phenotrait.com. The uploaded content must include:
+Developers should package the files prepared according to the above guidelines into a `.zip` or `.tar.gz` format and e-mail them to openpheno@phenotrait.com. 
 
 
 - **Platform Checks**:
